@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans>
+    <bean id="Car" class="org.lqk.lspring.bean.Car">
+        <property name="carId" value="001"/>
+        <property name="carColor" value="red"/>
+    </bean>
+
+    <bean id="Office" class="org.lqk.lspring.bean.Office">
+        <property name="officeId" value="824"/>
+    </bean>
+
+    <bean id="Boss" class="org.lqk.lspring.bean.Boss">
+        <constructor-arg ref="Car"/>
+        <property name="office" ref="Office"/>
+    </bean>
+</beans>
+
